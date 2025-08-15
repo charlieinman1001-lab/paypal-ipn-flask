@@ -1,1 +1,1 @@
-web: gunicorn Crochet Backend:app
+web: gunicorn crochet_backend:app
