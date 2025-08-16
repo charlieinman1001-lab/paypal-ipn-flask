@@ -8,8 +8,8 @@ processed_txns = set()
 
 
 
-EMAIL_ADDRESS = os.environ.get("EMAIL_ADDRESS")
-EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+EMAIL_ADDRESS =  "larasyarniverse@gmail.com"         #os.environ.get("EMAIL_ADDRESS")
+EMAIL_PASSWORD =   "nqwlpzuhubqymdne"          #os.environ.get("EMAIL_PASSWORD")
 
 TO_EMAIL = "charlieinman1001@gmail.com" 
 
