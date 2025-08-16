@@ -1,14 +1,16 @@
 from flask import Flask, request
 import smtplib
 from email.message import EmailMessage
+import os
 
 # Keep track of already processed transactions
 processed_txns = set()
 
 
 
-EMAIL_ADDRESS =   "larasyarniverse@gmail.com"   #os.environ.get("EMAIL_ADDRESS")  
-EMAIL_PASSWORD =   "nqwlpzuhubqymdne" #os.environ.get("EMAIL_PASSWORD")
+
+EMAIL_ADDRESS =  "larasyarniverse@gmail.com"         #os.environ.get("EMAIL_ADDRESS")
+EMAIL_PASSWORD =   "nqwlpzuhubqymdne"          #os.environ.get("EMAIL_PASSWORD")
 
 TO_EMAIL = "charlieinman1001@gmail.com" 
 
