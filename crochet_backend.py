@@ -1,6 +1,7 @@
 from flask import Flask, request
 import smtplib
 from email.message import EmailMessage
+import os
 
 # Keep track of already processed transactions
 processed_txns = set()
