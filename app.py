@@ -11,7 +11,7 @@ processed_txns = set()
 
 EMAIL_ADDRESS =  os.getenv("EMAIL_ADDRESS")
 EMAIL_PASSWORD =   os.getenv("EMAIL_PASSWORD")
-PORT = os.getenv("PORT")
+PORT = int(os.getenv("PORT"))
 
 TO_EMAIL = "charlieinman1001@gmail.com" 
 
