@@ -9,8 +9,9 @@ processed_txns = set()
 
 
 
-EMAIL_ADDRESS =  "larasyarniverse@gmail.com"         #os.environ.get("EMAIL_ADDRESS")
-EMAIL_PASSWORD =   "nqwlpzuhubqymdne"          #os.environ.get("EMAIL_PASSWORD")
+EMAIL_ADDRESS =  os.environ.get("EMAIL_ADDRESS")
+EMAIL_PASSWORD =   os.environ.get("EMAIL_PASSWORD")
+PORT = os.environ.get("PORT")
 
 TO_EMAIL = "charlieinman1001@gmail.com" 
 
@@ -276,4 +277,4 @@ def ipn_listener():
     return '', 200
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=PORT, debug=True)
