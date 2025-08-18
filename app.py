@@ -113,7 +113,6 @@ def ipn_listener():
         return '', 200
 
     if payment_status == "Completed":
-        processed_txns.add(txn_id)
         orderDetails = ""
         for k, v in ipn_data.items():
             orderDetails = orderDetails + f"{k}: {v}\n" 
@@ -271,6 +270,7 @@ def ipn_listener():
         """
         
         send_email(subject, body_text, body_html, EMAIL_ADDRESS, payer_email)
+        processed_txns.add(txn_id)
 
             
     
