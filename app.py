@@ -12,6 +12,8 @@ EMAIL_ADDRESS =  os.getenv("EMAIL_ADDRESS")
 EMAIL_PASSWORD =   os.getenv("EMAIL_PASSWORD")
 port = int(os.getenv("PORT", 10000))
 
+print(EMAIL_ADDRESS, EMAIL_PASSWORD, port)
+
 TO_EMAIL = "charlieinman1001@gmail.com" 
 
 app = Flask(__name__)
